@@ -18,19 +18,19 @@ public class DogController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            dog.transform.position = new Vector3(dog.transform.position.x + 1, dog.transform.position.y, dog.transform.position.z);
+            dog.transform.position = new Vector3(dog.transform.position.x + 0.04f, dog.transform.position.y, dog.transform.position.z);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            dog.transform.position = new Vector3(dog.transform.position.x - 1, dog.transform.position.y, dog.transform.position.z);
+            dog.transform.position = new Vector3(dog.transform.position.x - 0.04f, dog.transform.position.y, dog.transform.position.z);
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            dog.transform.position = new Vector3(dog.transform.position.x, dog.transform.position.y, dog.transform.position.z - 1);
+            dog.transform.position = new Vector3(dog.transform.position.x, dog.transform.position.y, dog.transform.position.z - 0.04f);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            dog.transform.position = new Vector3(dog.transform.position.x, dog.transform.position.y, dog.transform.position.z + 1);
+            dog.transform.position = new Vector3(dog.transform.position.x, dog.transform.position.y, dog.transform.position.z + 0.04f);
         }
 
         //Processing dog input for horizontal 
